@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_alignParentTop="true"
+            android:id="@+id/toolbar"
+            android:background="#1296db"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/head_image"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src ="@drawable/image"/>
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:text="个人信息"
+                    android:gravity="center"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="昵称"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <EditText
+                android:id="@+id/edt_name"
+                android:text="via"
+                android:enabled="false"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btn_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src ="@drawable/edit"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="班级"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <EditText
+                android:id="@+id/edt_class"
+                android:text="01041701"
+                android:enabled="false"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btn_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src ="@drawable/edit"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="学号"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <EditText
+                android:id="@+id/edt_studentCode"
+                android:text="2017210123"
+                android:enabled="false"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btn_studentCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src ="@drawable/edit"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="学院"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <EditText
+                android:id="@+id/edt_college"
+                android:text="通信与信息工程学院"
+                android:enabled="false"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btn_college"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src ="@drawable/edit"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <View
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#bfbfbf">
+        </View>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="QQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <EditText
+                android:id="@+id/edt_QQ"
+                android:text="2378309891"
+                android:enabled="false"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btn_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src ="@drawable/edit"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

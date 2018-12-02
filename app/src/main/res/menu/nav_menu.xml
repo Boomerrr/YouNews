@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@mipmap/group"
+            android:id="@+id/main"
+            android:checked="true"
+            android:title="班级"/>
+        <item
+            android:icon="@mipmap/studentcode"
+            android:id="@+id/info"
+            android:title="学号"/>
+        <item
+            android:icon="@mipmap/college"
+            android:id="@+id/weather"
+            android:title="学院"/>
+        <item
+            android:icon="@mipmap/qq"
+            android:id="@+id/message"
+            android:title="QQ"/>
+    </group>
+</menu>

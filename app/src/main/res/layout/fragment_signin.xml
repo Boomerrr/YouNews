@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_signin"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:src="@drawable/exit"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:layout_centerInParent="true"
+                android:text="@string/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/user_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <EditText
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/signin_studentCode"
+        android:hint="@string/inputStudentCode"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/signin_code"
+        android:hint="@string/setCode"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_blue_light"
+        android:background="@drawable/buttonstyle"
+        android:text="@string/signin"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

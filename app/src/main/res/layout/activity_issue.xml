@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.IssueActivity">
+    <android.support.v7.widget.Toolbar
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@android:color/transparent"
+                android:layout_margin="5dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/exit"
+                android:src="@drawable/exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="@string/edit_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/image"
+            android:id="@+id/head_iamge"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp" />
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/text"
+            android:text="有什么新鲜事儿？"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignLeft="@id/head_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="70dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edit"
+        android:hint="@string/input"
+        android:layout_margin="10dp"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <Button
+        android:id="@+id/btn_Send"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonstyle"
+        android:text="@string/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

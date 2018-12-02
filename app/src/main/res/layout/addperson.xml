@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/holo_blue_light"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+       <EditText
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:gravity="center"
+           android:id="@+id/edt_comment"
+           android:hint="请输入评论"
+           android:background="@drawable/editstyle"
+           android:layout_width="300dp"
+           android:layout_height="60dp"
+           android:textSize="20sp"
+           android:padding="5dp"
+           android:inputType="" />
+    <Button
+        android:id="@+id/comment_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/send"
+        android:background="@drawable/buttonstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
